@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Css/style.css">
+    
+</head>
+<body>
+
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="mision_vision.html">Misión y Visión</a>
+    <a href="produc.html">Productos</a>
+  </nav>
+ <!formulario de registro->
+ <section id="registro"
+ class="contenedor">
+<h2>Formulario de registro</h2>
+<form action="https://form submit.co/susethchavez6@gmail.com"
+method="post"></form>
+</section>
+
+  <section id="registro">
+      <h2>Registro</h2>
+      <form>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido" required>
+
+        <label>Dirección:</label>
+        <input type="text" name="direccion">
+
+        <label>Sexo:</label>
+        <select name="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label>Edad:</label>
+        <input type="number" id="edad" name="edad" oninput="calcularDescuento()">
+
+        <div id="descuento"></div>
+
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" name="fecha">
+
+        <label>Otros:</label>
+        <input type="text" name="otros">
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </div>
+<script>
+function calcularDescuento() {
+  let edad = parseInt(document.getElementById("edad").value); 
+  let descuento = document.getElementById("descuento");
+
+  if (!isNaN(edad)) { 
+    if (edad < 18) {
+      descuento.innerText = "🎉 Tienes un 10% de descuento por ser menor de 18 años.";
+    } else if (edad >= 18 && edad < 40) {
+      descuento.innerText = "🎉 Tienes un 9% de descuento por ser mayor de 18 años.";
+    } else if (edad >= 40 && edad < 50) {
+      descuento.innerText = "🎉 Tienes un 10% de descuento por ser mayor de 40 años.";
+    } else if (edad >= 50) {
+      descuento.innerText = "🎉 ¡Genial! Tienes un 25% de descuento por ser mayor de 50 años.";
+    }
+    descuento.style.display = "block";
+  } else {
+    descuento.style.display = "none";
+  }
+}
+</script>
+  
+  <footer>
+    <p>&copy; 2025 Heladería Dulce Nieve - Sitio Web de Suseth Chavez</p>
+  </footer>
+
+    
+</body>
+</html>

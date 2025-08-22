@@ -1,0 +1,124 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      line-height: 1.6;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+  
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0077b6;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #023e8a;
+    }
+
+    
+    .container {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    
+    ul {
+      list-style: circle inside;
+      padding-left: 10px;
+    }
+
+    
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+      color: #0077b6;
+    }
+    input, select, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    input:focus, select:focus {
+      border-color: #0096c7;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,150,199,0.4);
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #023e8a;
+    }
+
+    
+    #descuento {
+      font-weight: bold;
+      color: #023e8a;
+      padding: 10px;
+      background: #e0f7ff;
+      border-radius: 5px;
+      display: none;
+    }
+
+  
+    footer {
+      text-align: center;
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+  
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
